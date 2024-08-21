@@ -27,7 +27,7 @@ export class HomeComponent {
 
   setVideoArray(data: PexelVideoResponse) {
     this.videosToShowArray = data?.videos?.map((elem: PexelVideo) => {
-      return elem.video_files[2]?.link;
+      return elem.video_files[0]?.link;
     });
 
     console.log('this.videos: ', this.videosToShowArray);

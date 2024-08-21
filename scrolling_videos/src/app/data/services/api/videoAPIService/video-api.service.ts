@@ -19,7 +19,7 @@ export class VideoApiService {
     });
 
     return this.http.get<PexelVideoResponse>(
-      `https://api.pexels.com/videos/popular?per_page=${perPage}`,
+      `https://api.pexels.com/videos/search?query=nature&per_page=${perPage}`,
       {
         headers,
       }
