@@ -1,0 +1,5 @@
+<div class="videoWindow">
+  <div *ngFor="let videoLink of videosToShowArray" class="videoBackground">
+    <video class="videoFrame" [src]="videoLink" autoplay loop></video>
+  </div>
+</div>
